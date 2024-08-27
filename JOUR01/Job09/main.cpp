@@ -1,15 +1,28 @@
+#include <stdio.h>
 #include <iostream>
-using namespace std;
 
-int main() {
-    int staticArray[5] = {1, 2, 3, 4, 5};
-    int ppt = staticArray[0];
-    for (int i = 0; i < 5; i++) {
-        if (ppt>staticArray[i]){ 
-            ppt = staticArray[i];
+int trouverPlusPetit(int *tableau, int taille) {
+    
+    int *plusPetit = tableau;
+
+    
+    for (int i = 1; i < taille; i++) {
+        if (*(tableau + i) < *plusPetit) {
+            plusPetit = tableau + i;
         }
     }
-    cout << ppt << endl;
-    return 0;
 
+    return *plusPetit;
+}
+
+int main() {
+    int tableau[] = {12, 5, 8, 1, 9, 20};
+    int taille = sizeof(tableau) / sizeof(tableau[0]);
+
+   
+    int min = trouverPlusPetit(tableau, taille);
+
+    printf("Le plus petit élément du tableau est : %d\n", min);
+
+    return 0;
 }
