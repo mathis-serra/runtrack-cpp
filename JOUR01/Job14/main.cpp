@@ -7,8 +7,8 @@ int main(){
     cin >> n;
     int somme = 0;
     for( int i = 5 ; i < n ; i = i + 1){
-        float square = pow(i,2);
-        somme = somme + square;
+        float cube = pow(i,3);
+        somme = somme + cube;
 
     }
     cout << somme << endl;
