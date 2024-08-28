@@ -3,13 +3,13 @@
 
 class Aquatique {
     public:
-        Aquatique(int metre, int seconde);
+        Aquatique(double metre, double seconde);
         virtual ~Aquatique();
-        virtual void swim(int speed);
+        virtual void swim(double speed);
 
     private:
-        int metre;
-        int seconde;
+        double metre;
+        double seconde;
 };
 
 #endif 

@@ -3,13 +3,13 @@
 
 class Terrestre {
     public:
-        Terrestre(double metre, double seconde);
+        Terrestre(int metre, int seconde);
         virtual ~Terrestre();
-        virtual void walk(double speed);
+        virtual void walk(int speed);
 
     private:
-        double metre;
-        double seconde;
+        int metre;
+        int seconde;
 };
 
 #endif // TERRESTRE_H
