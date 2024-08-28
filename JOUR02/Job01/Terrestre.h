@@ -1,7 +1,6 @@
 #ifndef TERRESTRE_H
 #define TERRESTRE_H
 
-
 class Terrestre {
     public:
         Terrestre(int metre, int seconde);
@@ -13,4 +12,4 @@ class Terrestre {
         int seconde;
 };
 
-#endif
+#endif // TERRESTRE_H
